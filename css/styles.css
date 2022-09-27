@@ -1,0 +1,179 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+html {
+/*62.5% of 16px = 10px*/
+    font: 62.5%;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 35px;
+    padding: 2rem;
+}
+
+.mockups-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2.7rem;
+}
+
+.mockups {
+    width: 77.6%;
+}
+
+.main-text {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 4rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sans {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.sub-text {
+    margin: 0.8rem 3.2rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 30px;
+    width: 13rem;
+    padding: 0.7rem;
+    background-color: #fff;
+    color: var(--violet);
+    border: none;
+    margin: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--softMagenta);
+    color: #fff;
+}
+
+.icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    fill: var(--softMagenta);
+}
+
+.icon-ig {
+    width: 37px;
+}
+
+#icon-one {
+    margin-right: 7px;
+}
+#icon-two {
+    margin-right: 5.8px;
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    body{
+        display: block;
+        background-image: url(../images/bg-desktop.svg);
+        background-size: 819.2px 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        /* max-width: 1410px; */
+    }
+    
+    .logo{
+        margin-bottom: 5rem;
+        padding-left: 3.3rem;
+        grid-area: header;
+    }
+
+    .mockups{
+        max-width: 620px;
+        margin-left: -1.5rem;
+    }
+
+    .main-text {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 7rem;
+        font-size: 2.8rem;
+    }
+
+    .sub-text {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 10rem;
+        font-size: 1.15rem;
+    }
+
+    .grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .btn-container{
+        display: block;
+    }
+
+    .btn {
+        margin-left: -0.4rem;
+        width: 8rem;
+    }
+  .anything{
+    width: 90%;
+  }
+
+    .icons{
+        display: flex;
+        justify-content: end;
+    }
+}
