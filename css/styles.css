@@ -13,15 +13,18 @@ body {
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100vw 60vh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    align-items: center; */
 }
 
+/*LOGO SECTION*/
 .logo {
     height: 35px;
     padding: 2rem;
 }
 
+/* MOCKUPS SECTION */
 .mockups-container {
     display: flex;
     justify-content: center;
@@ -34,7 +37,6 @@ body {
 }
 
 .main-text {
-    text-align: center;
     color: #fff;
     font-size: 1.4rem;
     margin: 0 4rem;
@@ -49,7 +51,6 @@ body {
 
 .sans {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     color: #fff;
     font-weight: 400;
     opacity: 0.8;
@@ -59,11 +60,6 @@ body {
     margin: 0.8rem 3.2rem;
     font-size: 0.9rem;
     line-height: 1.6;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
 }
 
 .btn {
@@ -83,6 +79,7 @@ body {
     color: #fff;
 }
 
+/* ICONS SECTION */
 .icons {
     margin-top: 2rem;
     display: flex;
@@ -121,12 +118,6 @@ body {
         background-size: 819.2px 100vh;
         background-repeat: no-repeat;
     }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        /* max-width: 1410px; */
-    }
     
     .logo{
         margin-bottom: 5rem;
@@ -155,7 +146,6 @@ body {
 
     .grid{
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
     }
 
@@ -168,9 +158,7 @@ body {
         margin-left: -0.4rem;
         width: 8rem;
     }
-  .anything{
-    width: 90%;
-  }
+
 
     .icons{
         display: flex;
