@@ -13,42 +13,55 @@ body{
     margin: 0;
     padding: 1rem 3rem;
 }
+
 p{
     margin-bottom: 3.5rem;
 }
 
 img{
     width: 100%;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
 }
 
-a{
-    text-decoration: none;
-    color: hsl(257, 40%, 49%);
-}
-
-.logo{
-    align-self: flex-start;
-}
-
+/* SVG SECTION */
 svg{
     width: 70%;
 }
 
+/* LOGO SECTION */
+.logo{
+    align-self: flex-start;
+}
+
+/* BUTTON SECTION */
 .btn{
     background-color: white;
     padding: .8rem 1.5rem;
     border-radius: 10rem;
+    color: hsl(257, 40%, 49%);
+    transition: all 500ms;
+    display: inline-block;
+    margin: 3rem 0 1rem 0;
+    width: 80%;
 }
 
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+/* TEXT SECTION */
 .text{
     text-align: center;
 }
 
 .text--white{
     color: white;
+    margin-bottom: 0;
 }
 
+/* CONTAINER SECTION */
 .container{
     font-size: 1.8rem;
     display: flex;
@@ -56,25 +69,53 @@ svg{
     align-items: center;
 }
 
+/* ICONS SECTION */
+.icons{
+    text-align: center;
+}
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+}
+
 @media screen and (min-width: 1024px) {
+    img{
+        margin: 0;
+    }
+
     .grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
+        column-gap: 4rem;
+        margin-top: 4rem;
     }
+
+    .icons{
+        grid-column: 2;
+        text-align: inherit;
+        width: 100%;
+    }
+
 
     .text{
         text-align: left;
+        margin-top: 4rem;
+    }
+
+    .text--primary{
+        width: 100%;
     }
 
     .btn{
-        display: inline-block;
         margin-top: 2rem;
         padding: .8rem 3rem;
+        width: auto;
     }
 
     body{
         padding: 1rem 5rem
     };
 
+    
     }
