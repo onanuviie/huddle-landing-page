@@ -27,19 +27,17 @@ body {
 /* MOCKUPS SECTION */
 .mockups-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 2.7rem;
+    justify-content: end;
 }
 
 .mockups {
-    width: 77.6%;
+    width: 90%;
 }
 
 .main-text {
     color: #fff;
     font-size: 1.4rem;
-    margin: 0 4rem;
+    margin: 0;
     font-weight: 600;
     line-height: 1.4;
 
@@ -146,9 +144,13 @@ body {
 
     .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 2rem;
     }
 
+    .main{
+        margin-top: 2rem;
+    }
 
     .btn-container{
         display: block;
@@ -158,6 +160,7 @@ body {
         margin-left: -0.4rem;
         width: 8rem;
     }
+
 
 
     .icons{
