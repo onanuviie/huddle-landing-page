@@ -1,179 +1,121 @@
-:root {
-    --violet: hsl(257, 40%, 49%);
-    --softMagenta: hsl(300, 69%, 71%);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+html{
+    font-size: 62.5%;
 }
 
-html {
-/*62.5% of 16px = 10px*/
-    font: 62.5%;
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans';
+    background-size: cover;
+    margin: 0;
+    padding: 1rem 3rem;
 }
 
-body {
-    background-color: var(--violet);
-    background-image: url(../images/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100vw 60vh;
-    display: flex;
-    justify-content: center;
+p{
+    margin-bottom: 3.5rem;
 }
 
-.logo {
-    height: 35px;
-    padding: 2rem;
+img{
+    width: 100%;
+    margin: 2rem 0;
 }
 
-.mockups-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 2.7rem;
+/* SVG SECTION */
+svg{
+    width: 70%;
 }
 
-.mockups {
-    width: 77.6%;
+/* LOGO SECTION */
+.logo{
+    align-self: flex-start;
 }
 
-.main-text {
-    text-align: center;
-    color: #fff;
-    font-size: 1.4rem;
-    margin: 0 4rem;
-    font-weight: 600;
-    line-height: 1.4;
-
+/* BUTTON SECTION */
+.btn{
+    background-color: white;
+    padding: .8rem 1.5rem;
+    border-radius: 10rem;
+    color: hsl(257, 40%, 49%);
+    transition: all 500ms;
+    display: inline-block;
+    margin: 3rem 0 1rem 0;
+    width: 80%;
 }
 
-.poppins {
-    font-family: 'Poppins', sans-serif;
-}
-
-.sans {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-    opacity: 0.8;
-}
-
-.sub-text {
-    margin: 0.8rem 3.2rem;
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
-    border-radius: 30px;
-    width: 13rem;
-    padding: 0.7rem;
-    background-color: #fff;
-    color: var(--violet);
-    border: none;
-    margin: 1rem;
-    font-size: 0.8rem;
+.btn:hover{
     cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 }
 
-.btn:hover {
-    background-color: var(--softMagenta);
-    color: #fff;
+/* TEXT SECTION */
+.text{
+    text-align: center;
 }
 
-.icons {
-    margin-top: 2rem;
+.text--white{
+    color: white;
+    margin-bottom: 0;
+}
+
+/* CONTAINER SECTION */
+.container{
+    font-size: 1.8rem;
     display: flex;
-    justify-content: center;
-    margin-top: 0;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.icon {
-    width: 30px;
-    cursor: pointer;
+/* ICONS SECTION */
+.icons{
+    text-align: center;
 }
 
-.icon:hover {
-    fill: var(--softMagenta);
+.icon{
+    width: 3rem;
+    height: 3rem;
 }
 
-.icon-ig {
-    width: 37px;
-}
-
-#icon-one {
-    margin-right: 7px;
-}
-#icon-two {
-    margin-right: 5.8px;
-}
-
-
-
-
-@media screen and (min-width:1024px) {
-    body{
-        display: block;
-        background-image: url(../images/bg-desktop.svg);
-        background-size: 819.2px 100vh;
-        background-repeat: no-repeat;
-    }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        /* max-width: 1410px; */
-    }
-    
-    .logo{
-        margin-bottom: 5rem;
-        padding-left: 3.3rem;
-        grid-area: header;
-    }
-
-    .mockups{
-        max-width: 620px;
-        margin-left: -1.5rem;
-    }
-
-    .main-text {
-        text-align: left;
-        margin-left: 0;
-        margin-right: 7rem;
-        font-size: 2.8rem;
-    }
-
-    .sub-text {
-        text-align: left;
-        margin-left: 0;
-        margin-right: 10rem;
-        font-size: 1.15rem;
+@media screen and (min-width: 1024px) {
+    img{
+        margin: 0;
     }
 
     .grid{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        margin-top: 4rem;
     }
-
-
-    .btn-container{
-        display: block;
-    }
-
-    .btn {
-        margin-left: -0.4rem;
-        width: 8rem;
-    }
-  .anything{
-    width: 90%;
-  }
 
     .icons{
-        display: flex;
-        justify-content: end;
+        grid-column: 2;
+        text-align: inherit;
+        width: 100%;
     }
-}
+
+
+    .text{
+        text-align: left;
+        margin-top: 4rem;
+    }
+
+    .text--primary{
+        width: 100%;
+    }
+
+    .btn{
+        margin-top: 2rem;
+        padding: .8rem 3rem;
+        width: auto;
+    }
+
+    body{
+        padding: 1rem 5rem
+    };
+
+    
+    }
